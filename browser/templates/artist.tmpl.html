@@ -1,9 +1,8 @@
-<div>
+<!-- <div>
     <h3>{{ artist.name }}</h3>
     <h3>Albums</h3>
     <div class="row">
       <div class="col-xs-4" ng-repeat="album in artist.albums">
-        <!-- <a class="thumbnail" href="#" ng-click="viewOneAlbum(album)"> -->
         <a class="thumbnail" href="#" ui-sref="showAlbum({id: album._id})">
 
           <img ng-src="{{ album.imageUrl }}">
@@ -38,4 +37,12 @@
         </tr>
       </tbody>
     </table>
+</div> -->
+<div>
+  <h3>{{ artist.name }}</h3>
+  <ul class="nav nav-tabs">
+    <li><a ui-sref="showArtist.albums">ALBUMS</a></li>
+    <li><a ui-sref="showArtist.songs">SONGS</a></li>
+  </ul>
+  <ui-view></ui-view>
 </div>

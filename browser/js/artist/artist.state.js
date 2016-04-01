@@ -9,5 +9,13 @@ juke.config(function($stateProvider) {
     url: '/artists/:id',
     controller: 'ArtistCtrl',
     templateUrl: '/templates/artist.tmpl.html'
+  })
+  .state('showArtist.albums', {
+    url: '/albums',
+    templateUrl: '/templates/artist.albums.tmpl.html'
+  })
+  .state('showArtist.songs', {
+    url: '/songs',
+    templateUrl: '/templates/artist.songs.tmpl.html'
   });
 });
