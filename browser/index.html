@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <title>Juke</title>
+    <base href="/">
     <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="/bootstrap-dark.css" rel="stylesheet" />
     <link href="/style.css" rel="stylesheet" />
     <script src="/angular/angular.js" defer></script>
     <script src="/angular-ui-router/release/angular-ui-router.js" defer></script>
     <script src="/js/module.js" defer></script>
+    <!-- <script src="/js/location/location.controller.js" defer></script> -->
     <script src="/js/album/album.state.js" defer></script>
     <script src="/js/album/album.controllers.js" defer></script>
     <script src="/js/album/album.factory.js" defer></script>
@@ -19,6 +21,7 @@
     <script src="/js/artist/artist.factory.js" defer></script>
     <script src="/js/song/song.factory.js" defer></script>
   </head>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   <body ng-app="juke">
     <div id="main" class="container-fluid">
 
