@@ -29,13 +29,13 @@
         <sidebar ng-controller="SidebarCtrl">
           <img src="juke.svg" class="logo">
           <section>
-            <h4 class="playlist-item active">
+            <h4 ui-sref-active="active" class="playlist-item">
               <!-- <a href="#" ng-click="viewAlbums()">ALBUMS</a> -->
               <a ui-sref="albumList">ALBUMS</a>
             </h4>
           </section>
           <section>
-            <h5 class="playlist-item">
+            <h5 ui-sref-active="active" class="playlist-item">
               <!-- <a ng-click="viewAllArtists()" href="#">ARTISTS</a> -->
               <a ui-sref="artistList">ARTISTS</a>
             </h5>
